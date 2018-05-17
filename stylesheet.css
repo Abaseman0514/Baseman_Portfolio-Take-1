@@ -1,96 +1,117 @@
-@media screen and (min-width:600px) {
-  nav {
-    float: left;
-    width: 25%;
-  }
-  section {
-    margin-left: 25%;
-  }
+    .links {
+      display: flex;
+      direction: row;
+      justify-content: flex-end;
+    }
+
+    .links a {
+      color: white;
+      font-family: 'Kavivanar', cursive;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      margin: 4px;
 }
-@media screen and (max-width:10000px) {
-  nav li {
-    display: inline;
-  }
 
   a:hover {
     background-color: green;
   }
 
   body {
-background: #000 ;
-color: #333;
+    background: #000 ;
+    color: #333;
 }
 
-h1 {
-  color: rebeccapurple;
-  text-align: center;
+  h1 {
+    color: rebeccapurple;
+    text-align: center;
   }
 
-h2 {
-  color: darkorchid;
-  static: justify-content;
-  font-family: Cambria;
-  text-align: center;
-
-}
-h3 {
-  color: purple;
-  static: stretch;
-  font-family: Arial;
-  padding-left: 30px;
-  padding-right: 30px;
+  h2 {
+    color: darkorchid;
+    static: justify-content;
+    font-family: Cambria;
+    text-align: center;
 }
 
-div {
-  color: white;
-  font-size: 40px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+  h3 {
+    color: purple;
+    font-family: Arial;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+  .aboutMe {
+    display: inline-block;
+    font-family: Arial;
+    font-size: 14pt;
+    color: teal;
+  }
+      #contact {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: purple;
+        text-size: 14pt;
 }
 
-#contact {
-  display: block;
-  align-content: center;
-  text-align: center;
-  color: purple;
-  text-size: 14pt;
+    .photo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
 }
 
-img {
-display:flex;
-justify-content:space-around;
-display: inline;
-border-radius: 5px;
-box-shadow: 10px 15px violet;
-max-width: 300px;
-max-height:300px;
+  img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 10px 15px violet;
+    width: 300px;
+    height: 300px;
 }
 
-form {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: auto;
+  form {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: auto;
+  }
+  input, textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
+
   }
 
-  ul {
-    color: violet;
-    font-size: 17pt;
+    ul {
+      color: violet;
+      font-size: 17pt;
   }
 
-  .threecolumn {
-    padding: 1em;
-    -moz-column-count: 3;
-    -moz-column-gap: 1em;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 1em;
-    column-count: 3;
-    column-gap: 1em;
-    color:firebrick;
-    font-size: 20pt
-  }
+      .border {
+        border: solid white 7px;
+        padding: 10px;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        }
 
-  .border {
-    border-radius: solid 1px #000000
+    @media screen and (max-width:750px) {
+      .links a{
+        flex-direction: column;
+        justify-content: flex-start;
+          }
+
+      .photo {
+        flex-direction: column
+      }
+
+      nav {
+        float: left;
+        width: 25%;
+      }
+      section {
+        margin-left: 25%;
+      }
     }
