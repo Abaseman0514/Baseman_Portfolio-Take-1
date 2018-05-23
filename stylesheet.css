@@ -1,11 +1,12 @@
 body {
-    font-family: "Noto+Sans";
+    font-family: "Noto Sans";
     color: red;
+    margin: auto;
 }
 
 .links {
   display: flex;
-  direction: row;
+  flex-flow: row wrap;
   justify-content: flex-end;
 }
 
@@ -25,10 +26,6 @@ a:hover {
 a:visited{
   color: #e6d9f2;
 }
-
-body {
-  margin: 0; padding: 0;
-  }
 
 html {
   background: url("purple_ties.jpg")
@@ -53,7 +50,7 @@ h1 {
 }
 
 h3 {
-  color: #261339;
+  color: #9500ff;
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
@@ -62,6 +59,8 @@ h3 {
   text-shadow: 4px 2px rebeccapurple;
   text-decoration: underline;
   font-weight: bolder;
+  margin-bottom: 0px;
+  margin-top: 30px;
 }
 
 .listOrder {
@@ -74,10 +73,10 @@ h3 {
 
 .aboutMe {
   display: inline-block;
-  font-size: 19pt;
-  color: #8c53c6;
+  font-size: 17pt;
+  color: #9500ff;
   padding: 25px;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Days One', sans-serif;
 }
 
 #contact {
@@ -87,7 +86,7 @@ h3 {
   color: #33194d;
   text-shadow: 2px 2px #a679d2;
   font-size: 17pt;
-  font-family: "Noto+Sans";
+  font-family: "Noto Sans";
 }
 
 .photo {
@@ -104,6 +103,7 @@ img {
   box-shadow: 7px 10px #bf9fdf;
   width: 350px;
   height: 350px;
+  margin: auto;
 }
 
 form {
@@ -114,29 +114,45 @@ form {
   text-align: auto;
 }
 
-input, textarea {
+input {
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: gray;
+  background-color: black;
+  color: white;
+  font-size: 12pt;
+  font-weight: bold;
 }
 
-.border {
+textarea {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: gray;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+
+.fullForm {
   border: solid #a679d2 7px;
   padding: 10px;
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:768px) {
   .links a{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .photo {
-  flex-direction: column
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: auto;
     }
 
 nav {
